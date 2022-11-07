@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - 0.1px);
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.40);
+}
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    margin: 1.5rem;
+    min-width: 200px;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    filter: opacity(0.5) drop-shadow(0 0 0 hsl(277, 96%, 47%));
+    
+}
+
+h1, .stats{
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+strong{
+    color: hsl(277, 64%, 61%)
+}
+
+.content{
+    padding: 1rem;
+}
+main>p{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+
+.stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.stats p span{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    main{
+        flex-direction: row-reverse;
+        flex: 1;
+        margin: 10rem;
+        min-width: 500px;
+        text-align: start
+    }
+
+    main img{
+        border-radius: 0 0.5rem 0.5rem 0;   
+        width: 100%;
+        height: 100%;     
+    }
+
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    picture{
+        width: 50%;
+    }
+
+    .content{
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .stats{
+        margin-top: 6rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+  }
